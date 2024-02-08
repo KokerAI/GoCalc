@@ -3,10 +3,11 @@ package main
 import (
 	"bufio"
 	"fmt"
-	"goCalc/internal"
 	"os"
 	"strconv"
 	"strings"
+
+	"goCalc/internal"
 )
 
 type Number interface {
