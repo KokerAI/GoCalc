@@ -3,11 +3,10 @@ package main
 import (
 	"bufio"
 	"fmt"
+	"goCalc/internal"
 	"os"
 	"strconv"
 	"strings"
-
-	"goCalc/internal/operations"
 )
 
 type Number interface {
@@ -47,7 +46,7 @@ func calcLogic[T Number](reader *bufio.Reader) {
 	operator, _ := reader.ReadString('\n')
 	operator = strings.TrimSpace(operator)
 
-	operation := operations.GetOperation[T](rune(operator[0]))
+	operation := internal.GetOperation[T](rune(operator[0]))
 	if operation == nil {
 		fmt.Println("Недопустимая операция")
 		return
