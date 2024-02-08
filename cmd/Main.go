@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"strings"
 
-	"goCalc/operations"
+	"goCalc/internal/operations"
 )
 
 type Number interface {
