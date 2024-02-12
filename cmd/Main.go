@@ -57,7 +57,6 @@ func calcLogic[T Number](reader *bufio.Reader) {
 		fmt.Println(resultErr)
 		return
 	}
-
 	fmt.Printf("%v %c %v = %v\n", num1, operator[0], num2, result)
 }
 
