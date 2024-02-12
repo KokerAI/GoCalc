@@ -36,7 +36,6 @@ func calcLogic[T Number](reader *bufio.Reader) {
 		fmt.Println(err)
 		return
 	}
-
 	num2, err := readNumber[T]("Число B: ", reader)
 	if err != nil {
 		fmt.Println(err)
